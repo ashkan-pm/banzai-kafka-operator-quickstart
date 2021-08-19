@@ -1,0 +1,15 @@
+apiVersion: zookeeper.pravega.io/v1beta1
+kind: ZookeeperCluster
+metadata:
+  name: zookeeper
+  namespace: zookeeper
+spec:
+  replicas: 3
+  pod:
+    nodeSelector:
+      cloud.google.com/gke-nodepool: hoory-system-pool
+  config:
+    initLimit: 10
+    tickTime: 2000
+    syncLimit: 5
+    quorumListenOnAllIPs: true
