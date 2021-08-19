@@ -12,3 +12,6 @@ helm install core --namespace=kafka banzaicloud-stable/kafka-operator --values 5
 ```bash
 helm install zookeeper-operator --namespace=zookeeper pravega/zookeeper-operator --values 2-zookeeper.values.yaml
 ```
+
+### Node selection
+You can use `nodeSelector` or `affinity` to further control the deployment of your cluster on the Kubernetes nodes by searching for `YOUR_GKE_NODE_POOL` in the repository. The rest should be self-explanatory.
