@@ -1,2 +1,2 @@
 nodeSelector:
-  cloud.google.com/gke-nodepool: hoory-system-pool
+  cloud.google.com/gke-nodepool: YOUR_GKE_NODE_POOL
