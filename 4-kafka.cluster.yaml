@@ -31,19 +31,6 @@ spec:
   brokers:
     - id: 0
       brokerConfigGroup: "default"
-      brokerConfig:
-        nodeSelector:
-          cloud.google.com/gke-nodepool: YOUR_GKE_NODE_POOL
-    - id: 1
-      brokerConfigGroup: "default"
-      brokerConfig:
-        nodeSelector:
-          cloud.google.com/gke-nodepool: YOUR_GKE_NODE_POOL
-    - id: 2
-      brokerConfigGroup: "default"
-      brokerConfig:
-        nodeSelector:
-          cloud.google.com/gke-nodepool: YOUR_GKE_NODE_POOL
   rollingUpgradeConfig:
     failureThreshold: 1
   listenersConfig:

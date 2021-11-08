@@ -4,10 +4,7 @@ metadata:
   name: zookeeper
   namespace: zookeeper
 spec:
-  replicas: 3
-  pod:
-    nodeSelector:
-      cloud.google.com/gke-nodepool: hoory-system-pool
+  replicas: 1
   config:
     initLimit: 10
     tickTime: 2000

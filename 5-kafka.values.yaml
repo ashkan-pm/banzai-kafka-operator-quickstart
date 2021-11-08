@@ -1,2 +1,0 @@
-nodeSelector:
-  cloud.google.com/gke-nodepool: YOUR_GKE_NODE_POOL
